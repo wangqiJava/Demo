@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Scope;
 /**
  * @author : Wangqi
  * @project_name : demo
- * @description :
+ * @description : rabbitMq config
  * @date : 2020-12-06 23:51
  **/
 @EnableRabbit
