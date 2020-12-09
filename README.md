@@ -1,5 +1,5 @@
 # Demo
-spring-demo
+springboot-demo
 ## Development Environment for windows
 * rabbitMq-server 3.8.9 
 * esl-erlang 23.0 for windows
