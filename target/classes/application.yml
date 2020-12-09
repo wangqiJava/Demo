@@ -1,0 +1,68 @@
+#端口号
+server:
+  port: 9000
+
+#-------pollo 配置start--------
+#app:
+#  # 应用ID(在Apollo服务端新增项目添加的应用ID)
+#  id: springboot-apollo
+#apollo:
+#  bootstrap:
+#    #启用apollo配置开关
+#    enabled:true
+#  # apollo-config-service地址
+#  meta: http://127.0.0.1:8080
+#-------pollo 配置end--------
+
+
+spring:
+  #-------mysql 配置start--------
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysql?serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: root
+  #-------mysql 配置end--------
+  #-------redis 配置start--------
+  redis:
+    database: 1
+    host: localhost
+    #spassword=
+    pool:
+      max-active: 8
+      max-idle: 500
+      max-wait: -1
+      min-idle: 0
+    port: 6379
+    timeout: 0
+  #-------redis 配置end--------
+
+
+#-------mybatis mapper xml 配置start--------
+mybatis:
+  mapper-locations: classpath:mybatis/*Mapper.xml
+  #实体类路径
+  type-aliases-package: com.example.demo.model
+#-------mysql 配置end--------
+
+##设置hystrix超时时间(毫秒),设置调用者等待命令执行的超时限制，超过此时间，HystrixCommand被标记为TIMEOUT，并执行回退逻辑,默认1s
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+
+
+
+
+#person:
+#  age: 32
+#  name: Vae
+#  birth: 1985/05/14
+#  boss: false
+#  maps: {k1: v1,k2: 12}
+#  lists:
+#    - 许嵩
+#    - 林俊杰
