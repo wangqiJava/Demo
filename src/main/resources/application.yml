@@ -16,14 +16,14 @@ server:
 
 
 spring:
-  #-------mysql 配置start--------
+#-------mysql 配置start--------
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mysql?serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
     username: root
     password: root
-  #-------mysql 配置end--------
-  #-------redis 配置start--------
+#-------mysql 配置end--------
+#-------redis 配置start--------
   redis:
     database: 1
     host: localhost
@@ -35,8 +35,9 @@ spring:
       min-idle: 0
     port: 6379
     timeout: 0
-  #-------redis 配置end--------
-  #-------rabbitMq start---------------------
+#-------redis 配置end--------
+
+#-------rabbitMq start---------------------
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -46,7 +47,7 @@ spring:
       prefetch: 5 #每个消费者每次监听时可拉取处理的消息数量。
     password: guest
     username: guest
-  #-------rabbitMq end---------------------
+#-------rabbitMq end---------------------
 
 #-------mybatis mapper xml 配置start--------
 mybatis:
