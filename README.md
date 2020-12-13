@@ -1,6 +1,7 @@
 # Demo
 springboot-demo
 ## Development Environment for windows
+* jdk-12
 * rabbitMq-server 3.8.9 
 * esl-erlang 23.0 for windows
 * Git-2.24.1.2-64
