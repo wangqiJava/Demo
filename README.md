@@ -17,7 +17,6 @@ springboot-demo
 
 
 
-[百度网盘，提取码：j3ej](https://pan.baidu.com/s/1PcEaLjfI3DBqRH89r6iwaw)
 
 [srpingboot整合apollo](https://blog.csdn.net/qq_36323348/article/details/109727411)
 
