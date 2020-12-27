@@ -1,12 +1,14 @@
 package com.example.demo.model;
 
+import java.io.Serializable;
+
 /**
  * @author : Wangqi
  * @project_name : demo
  * @description :
  * @date : 2020-12-06 23:56
  **/
-public class User {
+public class User implements Serializable {
     private String userId;
     private String age;
 
@@ -24,5 +26,13 @@ public class User {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", age='" + age + '\'' +
+                '}';
     }
 }
