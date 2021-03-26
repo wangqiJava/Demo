@@ -16,14 +16,14 @@ server:
 
 
 spring:
-  #-------mysql 配置start--------
+#-------mysql 配置start--------
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mysql?serverTimezone=Asia/Shanghai&allowMultiQueries=true&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
     username: root
     password: root
-  #-------mysql 配置end--------
-  #-------redis 配置start--------
+#-------mysql 配置end--------
+#-------redis 配置start--------
   redis:
     database: 1
     host: localhost
@@ -35,17 +35,17 @@ spring:
       min-idle: 0
     port: 6379
     timeout: 0
-  #-------redis 配置end--------
-  #给项目来个名字
-  application:
-      name: rabbitmq-provider
-  #配置rabbitMq 服务器
-  rabbitmq:
-      host: 127.0.0.1
-      port: 5672
-      username: root
-      password: root
+#-------redis 配置end--------
 
+#-------rabbitMq start---------------------
+  application:
+    name: spirng-boot-rabbitmq
+  rabbitmq:
+    host: 192.168.0.86
+    port: 5672
+    password: guest
+    username: guest
+#-------rabbitMq end---------------------
 
 #-------mybatis mapper xml 配置start--------
 mybatis:
@@ -62,6 +62,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 30000
+
 
 
 

@@ -47,6 +47,12 @@ spring:
     username: guest
 #-------rabbitMq end---------------------
 
+#----------solr start-----------------------------
+  data:
+    solr:
+      host: http://localhost:8081/solr/demo_core
+#----------solr end-----------------------------
+
 #-------mybatis mapper xml 配置start--------
 mybatis:
   mapper-locations: classpath:mybatis/*Mapper.xml
