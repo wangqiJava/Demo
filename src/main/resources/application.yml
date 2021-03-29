@@ -38,8 +38,8 @@ spring:
 #-------redis 配置end--------
 
 #-------rabbitMq start---------------------
-  application:
-    name: spirng-boot-rabbitmq
+  #application:
+    #name: spirng-boot-rabbitmq
   rabbitmq:
     host: 192.168.0.86
     port: 5672
@@ -48,9 +48,11 @@ spring:
 #-------rabbitMq end---------------------
 
 #----------solr start-----------------------------
+  application:
+    name: solr
   data:
     solr:
-      host: http://localhost:8081/solr/demo_core
+      host: http://127.0.0.1:8983/solr/
 #----------solr end-----------------------------
 
 #-------mybatis mapper xml 配置start--------
