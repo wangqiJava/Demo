@@ -14,8 +14,13 @@ server:
 #  meta: http://127.0.0.1:8080
 #-------pollo 配置end--------
 
-
+debug: true
 spring:
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
 #-------mysql 配置start--------
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -70,9 +75,6 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 30000
-
-
-
 
 #person:
 #  age: 32
