@@ -18,7 +18,6 @@ public class textapollo {
 
     @RequestMapping("/helloApollo")
     public String get() {
-
         return "hello"+name+person.toString();
     }
 }

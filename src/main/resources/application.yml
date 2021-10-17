@@ -57,7 +57,8 @@ spring:
     name: solr
   data:
     solr:
-      host: http://127.0.0.1:8983/solr/
+      #--------------本地solr服务端接口
+      host: http://127.0.0.1:8080/solr/
 #----------solr end-----------------------------
 
 #-------mybatis mapper xml 配置start--------
