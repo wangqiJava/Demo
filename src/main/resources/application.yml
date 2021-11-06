@@ -1,6 +1,7 @@
 #端口号
 server:
   port: 9000
+
 #-------pollo 配置start--------
 #app:
 #  # 应用ID(在Apollo服务端新增项目添加的应用ID)
